@@ -1,4 +1,4 @@
-import requests
+Toimport requests
 from bs4 import BeautifulSoup
 import openvpn.client
 import os
@@ -14,8 +14,8 @@ def main():
     username = input('Enter your VPNbook username: ')
     password = input('Enter your VPNbook password: ')
     data = {
-        'username': username,
-        'password': password,
+        'username':francomichaaa 
+        'password':199508LOck199508LOck
         'csrf_token': csrf_token
     }
     response = requests.post(LOGIN_URL, data=data, allow_redirects=False)
