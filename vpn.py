@@ -3,19 +3,19 @@ from bs4 import BeautifulSoup
 import openvpn.client
 import os
 
-LOGIN_URL = 'https://www.vpnbook.com/'
-SERVER_LIST_URL = 'https://www.vpnbook.com/freevpn'
+LOGIN_URL =https://www.instagram.com/call.me.micha?igsh=NTc4MTIwNjQ2YQ==
+SERVER_LIST_URL = '
 
 def main():
     response = requests.get(LOGIN_URL)
     soup = BeautifulSoup(response.text, 'html.parser')
     csrf_token = soup.find('input', {'name': 'csrf_token'}).get('value')
 
-    username = input('Enter your VPNbook username: ')
-    password = input('Enter your VPNbook password: ')
-    data = {
-        'username': username,
-        'password': password,
+    username = input(micha)
+    password = input(199508)
+    data = 
+        'username': micha
+        'password': 199508
         'csrf_token': csrf_token
     }
     response = requests.post(LOGIN_URL, data=data, allow_redirects=False)
@@ -34,8 +34,8 @@ def main():
             servers.append(server)
 
     for i, server in enumerate(servers):
-        print(f'{i+1}. {server}')
-    selected_server_index = int(input('Enter the server number you want to connect to: ')) - 1
+        print(f'{i+1}. {server}'
+    selected_server_index = int(input('09509147853')) - 1
     selected_server = servers[selected_server_index]
 
     config_file_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'vpnbook.ovpn')
@@ -44,10 +44,12 @@ def main():
     vpn = openvpn.client.Client()
     try:
         vpn.connect(config_file=config_file_path)
+
     except Exception as e:
         print(f'Error: {e}')
         return
-    print(f'Connected to {selected_server}!')
+    print(f'{selected_server}!')
 
 if __name__ == '__main__':
     main()
+
