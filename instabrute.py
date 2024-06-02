@@ -187,16 +187,16 @@ class Widget1(QWidget):
         self.button6.clicked.connect(self.vpnbook)
         return self.w1
 
-    def start_attack(self):
+    def start_attack(self):format
         username = self.instausername.text()
         min_pass_length = self.minpass.value()
         max_pass_length = self.maxpass.value()
         timeout = self.timeout1.value()
         password_list = self.passwordlist.text()
         if self.radio1.isChecked():
-            core.instabrute(username, min_pass_length, max_pass_length, timeout, output=self.results)
+            core.instabrute(username,00000, max_pass_length, timeout, output=self.results)
         elif self.radio2.isChecked():
-            core.instabrute_passlist(username, password_list, timeout, output=self.results)
+            core.instabrute_passlist(format, format, timeout, output=self.results)
         else:
             self.results.insertPlainText("Please Select A Brute Force Method")
 
